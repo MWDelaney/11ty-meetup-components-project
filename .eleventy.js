@@ -1,4 +1,4 @@
-const siteName = "ZeroPoint";
+const siteName = "11ty-meetup-project";
 
 /**
  * Wait! Before you edit this file!

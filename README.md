@@ -1,94 +1,98 @@
-# 🪐ZeroPoint
+# 11ty-meetup-project
 
-<a href="https://github.com/MWDelaney/ZeroPoint/generate">
-  <img src="https://img.shields.io/badge/use%20this-template-blueviolet?logo=github&style=for-the-badge">
-</a>
+## Start building your website
+
+Create and edit your site **right from this readme file!**.
+
+🪐 Or edit your entire site in a web-based editor by [clicking here](https://github.dev/MWDelaney/11ty-meetup-project/).
+
+<details>
+  <summary><strong>📝 Creating and editing pages</strong></summary>
+
+## Creating and editing pages and content
+
+### Pages
+
+Create your site's main content! Pages can be written in HTML or [Markdown](https://www.markdownguide.org/basic-syntax/)!
+
+* [Edit the homepage](https://github.com/MWDelaney/11ty-meetup-project/edit/main/src/content/pages/index.md)
+* [Create a new page](https://github.com/MWDelaney/11ty-meetup-project/new/main/?filename=/src/content/pages/&value=---%0Atitle%3A%20Enter%20page%20title%20here%0A---)
+
+<!--
 
 ---
-**⭐ If you just used this template repository ⭐**
+#### Posts
+Blog posts
+* [Create a new post](https://github.com/MWDelaney/11ty-meetup-project/new/main/?filename=/src/content/posts/&value=----%0Atitle%3A%20%22Enter%20post%20title%22%0Adate%3A%20%222025-01-01%0A---)
 
-Prepare your repository for use by removing ZeroPoint branding and replacing it with your own project name and description.
-
-<details>
-<summary>1. Allow GitHub Actions to write to your repository</summary>
-
-1. Click "Settings" in the top right corner of your repository
-2. Click "Actions/General" in the left sidebar
-3. Under "Workflow permissions" choose "Read and write permissions"
-4. Click "Save"
-</details>
-<details>
-<summary>2. Run the "Remove ZeroPoint branding" action</summary>
-
-1. Click the "Actions" tab in the top navigation of your repository
-2. Click the "Remove ZeroPoint branding" workflow
-3. Click the "Run workflow" button, choose the `main` branch, and click the green "Run workflow" button
+-->
 </details>
 
-
-## What is ZeroPoint?
-Read more at [https://getzeropoint.com](https://getzeropoint.com)!
-
-A free, new-user-friendly static website generator  starter project designed to get you "up to zero" building your site, letting you focus on your HTML, CSS, and Javascript rather than setting up your build tools.
-
-Create, edit, and publish your content to the web for free.
-
-With first-class support for GitHub Pages and Netlify, ZeroPoint has everything you need to get started building your website, including:
-
-* 🗺️ A simple, easy-to-understand project structure powered by [Eleventy](https://11ty.dev)
-* ⚒️ Sass and JavaScript compilation and minification
-* 🚀 Optional automated deployment to GitHub Pages or Netlify
-
-With ZeroPoint you can build your website with the tools you know and love, and deploy it to the platform of your choice with ease.
-
-## Get started: Use This Template
-
-Get started with ZeroPoint one of the following ways:
-
-✨ ZeroPoint will automatically remove its own branding and replace it with your own project name and description. See details [here](https://github.com/MWDelaney/ZeroPoint/blob/main/.github/workflows/zeropoint-template.yml).
-
 <details>
- <summary><strong>Start with GitHub (recommended)</strong></summary>
+  <summary><strong>🎨 Look and Feel</strong></summary>
 
-### Start with GitHub
+## Look and Feel
 
-Start your project with ZeroPoint by clicking the "Use this template" button below:
+### Navigation
 
-<a href="https://github.com/MWDelaney/ZeroPoint/generate">
-  <img src="https://img.shields.io/badge/use%20this-template-blueviolet?logo=github&style=for-the-badge">
-</a>
- </details>
+Your site's navigation is how your users will get around! Edit the site's navigation menu in [JSON format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)!
 
-<details>
- <summary><strong>Start with Netlify</strong></summary>
+* [Edit the navigation](https://github.com/MWDelaney/11ty-meetup-project/edit/main/src/data/navigation.json)
 
-### Start with Netlify
+### Styles
 
-Create a copy of ZeroPoint and deploy it straight to [Netlify](https://netlify.com) for **free**!
+Colors, spacing, and fonts, oh my! You can edit your branding and styles here using CSS, SCSS, and CSS variables! 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/MWDelaney/ZeroPoint/)
+* [Edit your branding](https://github.com/MWDelaney/11ty-meetup-project/edit/main/src/assets/styles/_branding.scss)
+* [Edit your overall styles](https://github.com/MWDelaney/11ty-meetup-project/edit/main/src/assets/styles/styles.scss)
 
- </details>
+Learning CSS can be daunting but there are a ton of useful resources on the web. Check out [SmolCSS](https://smolcss.dev) to get started!
 
-<details>
- <summary><strong>Start with GitHub CLI (https://cli.github.com)</strong></summary>
+### Javascript
 
-### Start with GitHub CLI
+**Optional!** Add javascript functionality to your site
 
-Get started from your command line
-
- ```sh
-  gh repo create example.com --template MWDelaney/ZeroPoint
- ```
+* [Add Javascript](https://github.com/MWDelaney/11ty-meetup-project/edit/main/src/assets/scripts/main.js)
 
 </details>
 
-## Get to Know ZeroPoint
+<details>
+  <summary><strong>🚀 Deploy 11ty-meetup-project</strong></summary>
 
-Ready to go deeper? Here's how ZeroPoint is laid out:
+## Deploy 11ty-meetup-project
+
+Once you set up deployment, any time you commit to your repository's `main` branch, GitHub will build and deploy your site.
+
+<details>
+  <summary><strong>Deploy to GitHub Pages</strong></summary>
+
+### Setup:
+
+1. [Enable GitHub Pages](https://github.com/MWDelaney/11ty-meetup-project/settings/pages) in your repository settings, choose "GitHub Actions" as the source.
+2. [Allow "Read and write permissions" for GitHub Workflows](https://github.com/MWDelaney/11ty-meetup-project/settings/actions) in your repository settings for the GitHub Actions workflow to run.
+
+</details>
+
+<details>
+  <summary><strong>Deploy to Netlify</strong></summary>
+
+### Setup:
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/MWDelaney/11ty-meetup-project/)
+
+
+</details>
+
+</details>
+
+---
+
+## Get to Know 11ty-meetup-project
+
+Ready to go deeper? Here's how 11ty-meetup-project is laid out:
 
 ```sh
-example.com                 # → Root of your ZeroPoint-based project
+example.com                 # → Root of your project
 ├── src/                    # → Source directory
 │   ├── assets/             # → Site assets
 │   │   ├── fonts/
@@ -116,8 +120,8 @@ example.com                 # → Root of your ZeroPoint-based project
 │       └── site.json       # → Site branding configuration
 ├── .eleventy.js            # → Core Eleventy config file
 ├── netlify.toml            # → Netlify deployment and plugin configuration (optional)
-├── README.ZeroPoint.md      # → ZeroPoint readme
-└── README.md               # → Your project's readme (automatically generated when this template is used)
+├── README.11ty-meetup-project.md     # → Template repository readme
+└── README.md
 ```
 
 ## Eleventy Configuration
