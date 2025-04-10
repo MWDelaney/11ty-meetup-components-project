@@ -1,0 +1,5 @@
+{
+  "layout": "base",
+  "permalink": "/component/{{ title | slugify }}/",
+  "templateEngineOverride": "njk, md"
+}

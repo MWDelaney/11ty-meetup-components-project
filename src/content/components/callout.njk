@@ -1,0 +1,20 @@
+---
+title: Callout
+heading: Help organize the 11ty Meetup!
+description: A callout component to highlight important information.
+linkUrl: #
+linkText: Learn more about 11ty Meetup!
+background: light
+---
+
+<article class="block block-callout bg-{{ background }} text-bg-{{ background }} py-5">
+  <div class="block-content text-center">
+    <header>
+      <h2>{{ heading }}</h2>
+    </header>
+    {{ description | safe }}
+    <footer class="mt-4">
+      <a href="{{ linkUrl }}" class="btn btn-secondary">{{ linkText }}</a>
+    </footer>
+  </div>
+</article>

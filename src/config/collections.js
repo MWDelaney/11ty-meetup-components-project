@@ -22,5 +22,15 @@ export default {
     eleventyConfig.addCollection("pages", function(collectionApi) {
       return collectionApi.getFilteredByGlob("src/content/pages/**/*.md");
     });
+  },
+
+  /**
+   * Components
+   */
+  components: function (eleventyConfig) {
+    // Get all `.md` files in the `src/pages` directory
+    eleventyConfig.addCollection("components", function(collectionApi) {
+      return collectionApi.getFilteredByGlob("src/content/components/*.njk");
+    });
   }
 }

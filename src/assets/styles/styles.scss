@@ -1,6 +1,7 @@
 /**
  * Import stylesheet partials
 */
+<<<<<<< HEAD
 @import "reset";
 @import "branding";
 
@@ -73,3 +74,6 @@ button {
 label {
   padding: calc(var(--unit) / 2) 0;
 }
+=======
+@import "bootstrap";
+>>>>>>> 8a2359e (Ready for presentation)

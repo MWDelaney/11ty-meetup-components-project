@@ -1,0 +1,24 @@
+---
+title: Stylesheet
+permalink: /stylesheet/
+---
+{% for item in collections.components | sort(attribute="data.title") %}
+  {% if item.data.title %}
+  <section class="stylesheet-component container">
+    {# Show the title of the component #}
+    <header class="d-flex border-bottom">
+      <h2 id="{{ item.data.title | slugify }}">
+        {{ item.data.title | safe }}
+      </h2>
+      <nav class="nav nav-pills">
+        <a href="/component/{{ item.data.title | slugify }}/" class="nav-link">View component</a>
+        <a href="#top" class="nav-link">Back to top</a>
+      </nav>
+    </header>
+    {# Show the content of the component #}
+    <div class="stylesheet-block-content">
+      {{ item.templateContent | safe }}
+    </div>
+  </section>
+  {% endif %}
+{% endfor %}

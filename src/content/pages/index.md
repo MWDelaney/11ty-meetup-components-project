@@ -2,7 +2,7 @@
 permalink: /
 title: Up to zero! 🪐
 ---
-
+<article class="container">
 Get started:
 
 You can write content in HTML, [Markdown](https://github.com/adam-p/markdown-here/wiki/markdown-cheatsheet), or [Nunjucks](https://mozilla.github.io/nunjucks/). This page is written in Markdown.
@@ -14,3 +14,4 @@ You can write content in HTML, [Markdown](https://github.com/adam-p/markdown-her
 ---
 
 <img src="/assets/images/favicon.svg" alt="Logo">
+</article>
