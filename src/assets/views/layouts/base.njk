@@ -36,10 +36,15 @@
 
     {# Main content #}
     <main id="main" tabindex="-1">
-      <header class="container mb-5" id="page-header">
+      <header class="container mb-5 d-flex" id="page-header">
         <h1>
           {{ title | safe }}
         </h1>
+        {% if permalink != "/stylesheet/" %}
+        <nav class="nav nav-pills">
+          <a href="/stylesheet/" class="nav-link">Back to Stylesheet</a>
+        </nav>
+        {% endif %}
       </header>
       {{ content | safe }}
     </main>
