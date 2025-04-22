@@ -1,0 +1,11 @@
+{%- for item in components -%}
+  {# Find the component in the collections #}
+  {% for component in collections.components -%}
+    {%- if component.data.title | slugify == item.type | slugify -%}
+        {# append the component's nunjucks-formatted content or rawInput to the item object #}
+        {% set updatedItem = item | merge({ templateContent: component.rawInput }) %}
+        {# Render the component with the updated item data #}
+          {{- updatedItem.templateContent | renderContent("njk", updatedItem) | safe -}} {# ❌ this renders as HTML without processing the nunjucks variables at all #}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endfor -%}
