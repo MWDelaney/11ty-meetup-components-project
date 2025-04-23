@@ -8,43 +8,10 @@ links:
   - linkUrl: #
     linkText: Learn more about 11ty Meetup!
 background: light
-fields:
-  - name: heading
-    label: Heading
-    type: text
-    required: true
-    default: Callout heading from frontmatter
-  - name: description
-    label: Description
-    type: textarea
-    required: true
-    default: Callout description from frontmatter
-  - name: links
-    label: Links
-    type: list
-    itemLabel: Link
-    itemLabelField: linkText
-    fields:
-      - name: linkUrl
-        label: Link URL
-        type: text
-        required: true
-        default: '#'
-      - name: linkText
-        label: Link Text
-        type: text
-        required: true
-        default: 'Join the 11ty Meetup!'
-  - name: background
-    label: Background Color (light/dark)
-    type: select
-    options:
-      light: Light Background Color (default)
-      dark: Dark Background Color (inverse)
 ---
 
 <section class="block block-callout bg-{{ background }} text-bg-{{ background }} py-5">
-  <article class="block-content text-center">
+  <article class="container text-center">
     <header>
       <h2>{{ heading }}</h2>
     </header>

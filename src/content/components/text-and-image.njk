@@ -1,0 +1,23 @@
+---
+title: Text and Image
+heading: Text and image component
+description: A component that combines text and an image. A component that combines text and an image. A component that combines text and an image. A component that combines text and an image.A component that combines text and an image.A component that combines text and an image.A component that combines text and an image.A component that combines text and an image.
+image: /assets/images/possums.jpg
+imageAlt: A cute possum
+imagePosition: left
+background: warning
+---
+
+<section class="block block-text-and-image background-{{ background }} text-bg-{{ background }} py-5">
+  <div class="container">
+    <div class="row row-cols-2 align-items-center">
+      <article class="col">
+        <h2>{{ heading }}</h2>
+        {{ description | safe }}
+      </article>
+      <figure class="col">
+        <img src="{{ image }}" class="img-fluid rounded shadow" alt="{{ imageAlt }}" />
+      </figure>
+    </div>
+  </div>
+</section>

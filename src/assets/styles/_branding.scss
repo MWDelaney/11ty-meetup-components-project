@@ -6,3 +6,9 @@ $link-color: $primary;
 $custom-theme-colors: (
   "primary": $primary,
 );
+
+.block-text-and-image {
+  figure img {
+    transform: rotate(6deg);
+  }
+}
